@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D0D0D0;
+}
+
+.page {
+    /* border: 5px solid red; */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 5px solid #894aa3;
+}
+
+
+/* FLEX */
+
+.flex-container {
+    display: flex;
+}
+
+.flexturn {
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.flex-container.three-column>* {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(100%/3);
+}
+
+.flex-container.four-column>* {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 25%;
+}
+
+.flex-container.two-column>* {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(100%/2);
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+
+/* HEADER */
+
+header {}
+
+nav {
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.nav {
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search {
+    flex-grow: 1;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+
+/* QUOTE */
+
+.quote p {
+    text-align: center;
+}
+
+.quote {
+    background-color: #E9E9E7;
+    padding: 2rem 15% 2rem 15%;
+}
+
+
+/* SLIDER */
+
+.slider {
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-image: url("http://placekitten.com/890/300");
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.caption {
+    flex: 0 0 50%;
+    padding: 1rem;
+    background-color: black;
+    opacity: 70%;
+    color: white;
+}
+
+
+/* NEWS */
+
+.news {
+    padding: 1rem;
+}
+
+.news .column {
+    display: flex;
+}
+
+.news .column .left {
+    flex: 0;
+    flex-basis: 25%;
+}
+
+.news .column .right {
+    flex: 1;
+    flex-basis: 75%;
+}
+
+.img-fluid {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* POLAROID */
+
+.polaroid {
+    background-color: #EBEBE9;
+    text-align: center;
+}
+
+.polaroid img {
+    align-self: center;
+    margin: 5px;
+}
+
+article {
+    background-color: white;
+    margin: 10px;
+}
+
+section.polaroid {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+/* FOOTER */
+
+
+/* FIRST */
+
+.first {
+    text-align: center;
+}
+
+.column a {
+    color: #894aa3;
+    text-decoration: none;
+}
+
+.column a:hover {
+    color: red;
+}
+
+
+/* Second */
+
+.second {
+    background-color: #444444;
+    color: white;
+}
+
+.textalignleft {
+    text-align: left;
+}
+
+.textalignright {
+    text-align: right;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
